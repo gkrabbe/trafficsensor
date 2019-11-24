@@ -1,0 +1,64 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>97071d27-5099-4727-9454-38b7475e141c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Vision.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Vision</Name>
+    <RootNamespace>Vision</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="models.py" />
+    <Compile Include="object_tracker.py" />
+    <Compile Include="sort.py" />
+    <Compile Include="tain.py" />
+    <Compile Include="utils\datasets.py" />
+    <Compile Include="utils\parse_config.py" />
+    <Compile Include="utils\utils.py" />
+    <Compile Include="Vision.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="config\.ipynb_checkpoints\" />
+    <Folder Include="utils\" />
+    <Folder Include="utils\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\.ipynb_checkpoints\coco-checkpoint.data" />
+    <Content Include="config\.ipynb_checkpoints\coco-checkpoint.names" />
+    <Content Include="config\coco.data" />
+    <Content Include="config\coco.names" />
+    <Content Include="config\yolov3-tiny.cfg" />
+    <Content Include="config\yolov3.cfg" />
+    <Content Include="config\yolov3.weights" />
+    <Content Include="utils\__pycache__\datasets.cpython-36.pyc" />
+    <Content Include="utils\__pycache__\parse_config.cpython-36.pyc" />
+    <Content Include="utils\__pycache__\parse_config.cpython-37.pyc" />
+    <Content Include="utils\__pycache__\utils.cpython-36.pyc" />
+    <Content Include="utils\__pycache__\utils.cpython-37.pyc" />
+    <Content Include="utils\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="Vision.ipynb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/trafficsensor/v16
+/.vs/trafficsensor/DesignTimeBuild
+/Vision/.ipynb_checkpoints
+/Vision/config/.ipynb_checkpoints
+/Vision/config/yolov3.weights
+/Vision/utils/__pycache__
+/Vision/__pycache__
